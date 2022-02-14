@@ -6,7 +6,7 @@ In this project, a static website has been deployed to AWS. create a S3 bucket a
 ### Steps to setup:
 1. An S3 bucket is created and configured the bucket for website hosting and secured it using IAM policies.
 2. Next, content delivery is sped up using AWS’ content distribution network service, CloudFront.
-3. Lastly, you will be able to access the website in a browser using the unique CloudFront endpoint.
+3. Lastly, you will be able to access the website in a browser using the unique [CloudFront endpoint](https://dff06k8n2xilo.cloudfront.net). 
 
 Services and Tools used:
 
