@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+
+</head>
+<title>My static WebSite! for WebTech!</title>
+<head>
+	<a href="https://github.com/WilliamG123"><img src="githubicon.png" height="80" /></a>
+	<link rel="stylesheet" type="text/css" href="mywebsite.css">
+<head>
+	<style type="text/css">
+	
+		.class1 {color:black;}
+		.class2 {color:red;}
+	
+
+	</style>
+</head>
+
+<body>
+<p>
+	USERNAME: cloud PASSWORD: computing
+</p>
+
+
+
+<script type="text/javascript" >
+
+// Below function Executes on click of login button.
+function validate(){
+var username = document.getElementById("username").value;
+var password = document.getElementById("password").value;
+if ( username == "cloud" && password == "computing"){
+alert ("Login successfully");
+window.location = "addingImages.html"; // Redirecting to other page.
+return false;
+}
+else{
+attempt --;// Decrementing by one.
+alert("You have left "+attempt+" attempt;");
+// Disabling fields after 3 attempts.
+if( attempt == 0){
+document.getElementById("username").disabled = true;
+document.getElementById("password").disabled = true;
+document.getElementById("submit").disabled = true;
+return false;
+}
+}
+}
+
+
+
+
+</script>
+
+
+<div class="class1"> 
+<form id="form_id" method="post" name="myform">
+	Username: <input type="text" name="username" id="username"/>
+	<br />
+	<br />
+	Password: <input type="password" name="password" id="password"/>
+	<br />
+	<br />
+	<input type="button" value="Login" id="submit" onclick="validate()"/>
+	
+</form>
+
+ </div>
+
+</body>
